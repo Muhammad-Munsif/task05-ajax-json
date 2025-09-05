@@ -66,19 +66,19 @@ button {
   margin-bottom: 10px;
 }
 .userCard label {
-    font-size: 20px;
-    padding-top: 15px;
-    /* background-color: red; */
+  font-size: 20px;
+  padding-top: 15px;
+  /* background-color: red; */
 }
 #rawJson {
-    background: #f4f4f4;
-    padding: 15px;
-    border: 1px solid #ccc;
-    max-width: 90%;
-    margin: 20px auto;
-    text-align: left;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-size: 14px;
+  background: #f4f4f4;
+  padding: 15px;
+  border: 1px solid #ccc;
+  max-width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 14px;
 }
