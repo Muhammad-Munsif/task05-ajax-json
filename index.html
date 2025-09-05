@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Users Fetcher</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Random Users Fetcher Data</h1>
     <button onclick="getUser()">GetUser</button>
 
     <div id="spinner">
-        <p>Loading users</p>
+      <p>Loading users</p>
     </div>
     <!-- <button id="getUsersBtn">Get Users</button><br><br>
 
@@ -26,12 +26,15 @@
 </select>
 <button id="filterBtn">Filter by Country</button> -->
 
-<div id="userContainer" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;"></div>
+    <div
+      id="userContainer"
+      style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px"
+    ></div>
 
     <!-- <div id="userContainer"></div> -->
     <h2>Raw API JSON (for developers)</h2>
-<pre id="rawJson"></pre>
+    <pre id="rawJson"></pre>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
