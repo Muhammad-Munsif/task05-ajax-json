@@ -1,22 +1,18 @@
 function getUser() {
   const spinner = document.getElementById("spinner");
   const container = document.getElementById("userContainer");
-
   spinner.style.display = "block";
   container.innerHTML = "";
-
   fetch("https://randomuser.me/api/?results=16")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
       spinner.style.display = "none";
-
       document.getElementById("rawJson").textContent = JSON.stringify(
         data,
         null,
         1
       );
-
       data.results.forEach((user) => {
         const card = document.createElement("div");
         card.className = "userCard";
@@ -26,13 +22,11 @@ function getUser() {
             <p><strong>Email:</strong><br>${user.email}</p>
             <label><strong>Country:</strong>${user.location.country}</label>
             `;
-            // <p><strong>Country:</strong><br>${user.location.country}</p>
+        // <p><strong>Country:</strong><br>${user.location.country}</p>
         container.appendChild(card);
       });
     })
     .catch((err) => {
       spinner.innerHTML = "<p>Error Fetching users</p>";
     });
-
-    
 }
